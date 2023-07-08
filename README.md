@@ -1,2 +1,2 @@
 # Projeto-SiteCordel
- Projeto proposto pelo professor Gustavo Guanabara do Curso em Vídeo.
+ Projeto proposto pelo professor Gustavo Guanabara no Curso em Vídeo.
