@@ -3,90 +3,85 @@
 /*FONTES*/
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+/*VARIANTES*/
+:root{
+    --titulo: 'Passion One', cursive;
+    --fonte1: 'Sriracha', cursive;
+    --fonte2: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /*GERAL*/
 *{
     margin: 0px;
     padding: 0px;
 }
+html, body{
+    min-height: 100vh;
+}
 
 /*HEADER*/
 header{
+    padding: 50px 0px;
     background-color: black;
-    height: 250px;
     text-align: center;
+    color: white;
 }
 header > h1{
-    font-family: 'Passion One', cursive;
-    color: white;
-    font-size: 6em;
+    font-family: var(--titulo);
+    font-size: 10vw;
     font-weight: bold;
-    padding-top: 50px;
-    margin: auto;
 }
 header > p{
-    color: white;
-    font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte2);
 }
 
 /*A*/
 a{
     text-decoration: none;
     color: white;
-    font-weight: 900;
+    font-weight: bolder;
 }
 a:hover{
     text-decoration: underline;
 }
 
-/*DIV*/
-div{
-    background-size: 100% 100%;
-    background-position: center;
-    background-attachment: fixed;
-}
-div#img1{
-    background-image: url(../imagens/background001.jpg);
-}
-div#img2{
-    background-image: url(../imagens/background002.jpg);
-}
-
 /*SECTION*/
 section{
-    position: relative;
     background-color: white;
-    line-height: 4em;
-    height: 650px;
-    padding-left: 160px;
+    padding: 15vw 0px 15vw 40px;
+    line-height: 2.5em;
+    font-family: var(--fonte1);
+    font-size: 3vw;
 }
-section.transp{
-    background-color: transparent;
+section > p{
+    padding-bottom: 2em;
+}
+section.imagem{
     color: white;
-    box-shadow: inset 3px 3px 15px black;
+    box-shadow: inset 0px 15px 20px 2px rgba(0, 0, 0, 0.7);
+    background-position: right bottom;
+    background-attachment: fixed;
 }
-section.transp pre{
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+}
+section.imagem > p{
     background-color: rgba(0, 0, 0, 0.35);
-    padding: 10px;
-}
-section pre{
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-
-    font-family: Sriracha, cursive;
-    font-size: 2em;
-    margin-left: -125px;
+    padding: 5px;
+    display: inline-block;
+    text-shadow: 1px 1px 0px black;
 }
 
 /*FOOTER*/
 footer{
-    height: 40px;
     background-color: black;
     text-align: center;
 }
 footer p{
-    padding-top: 10px;
+    padding: 15px 0px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte2);
 }
